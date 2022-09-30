@@ -1,0 +1,10 @@
+s = 'www.ncwu.edu.cn'
+print(s[0])
+print(s[:3])
+print(s[-3:])
+print(len(s))
+print(s.find('u'))
+print(s.count('c'))
+print(s.replace('.', '-'))
+print(s.upper())
+print(s.split('.'))
