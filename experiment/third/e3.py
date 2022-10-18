@@ -6,11 +6,11 @@ space = 0
 digit = 0
 others = 0
 for c in s:
-    if c.isalpha():
+    if c in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ':
         letters += 1
-    elif c.isspace():
+    elif c == ' ':
         space += 1
-    elif c.isdigit():
+    elif c in '0123456789':
         digit += 1
     else:
         others += 1
