@@ -5,7 +5,10 @@
 with open('yzy.txt', 'r', encoding='utf-8') as f:
     print(f.read())
 
-# 逐行读取文件内容
+# 逐行读取文件内容 readline
 with open('yzy.txt', 'r', encoding='utf-8') as f:
-    for line in f:
+    while True:
+        line = f.readline()
+        if not line:
+            break
         print(line, end='')
