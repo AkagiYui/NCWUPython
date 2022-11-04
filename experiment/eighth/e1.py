@@ -18,11 +18,11 @@ import numpy as np
 array_a = np.arange(20).reshape(4, 5)
 array_b = np.arange(100, 120).reshape(4, 5)
 
-print(array_a + array_b, '\n')
-print(array_b - array_a, '\n')
-print(array_a * array_b, '\n')
-print(array_a / array_b, '\n')
-print(array_a ** 2 + array_b ** 3, '\n')
+print(array_a + array_b, '\n')  # A+B
+print(array_b - array_a, '\n')  # B-A
+print(array_a * array_b, '\n')  # A*B
+print(array_a / array_b, '\n')  # A/B
+print(array_a ** 2 + array_b ** 3, '\n')  # A2+B3
 
 print(array_a[1:3, :].sum() + array_b[1:3, :].sum(), '\n')
 
