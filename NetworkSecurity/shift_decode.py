@@ -2,14 +2,14 @@
 
 secret = 'mjqqt cnftrnsl xzwuwnx'
 
-# 从1开始移位
-m = 1
-while m < 26:
+for i in range(1, 26):  # 从1开始移位
     plain = ''
-    for c in secret:
-        if c == ' ':
+    for c in secret:  # 遍历密文
+        if c == ' ':  # 保留空格
             plain += ' '
         else:
-            plain += chr(ord('a') + (ord(c) - ord('a') - m) % 26)
-    print(m, plain)
-    m += 1
+            c = ord(c) - ord('a')  # 转换为相对于a的偏移量
+            c = (c - i) % 26  # 移位
+            c = c + ord('a')  # 转换为绝对偏移量
+            plain += chr(c)  # 转换为字符
+    print(i, plain)
